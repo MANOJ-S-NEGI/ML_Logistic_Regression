@@ -64,3 +64,33 @@ applying sigmoid (σ)
  
 in a similar way the logistic regression works.
 The issue that arises by applying the cost function is that it will lead to the local minima problem which will impact the preferred result.
+
+
+---
+---
+Sigmoid has several benefits and use cases:
+
+**1. Smoothness and Continuity:**
+
+The sigmoid function is smooth and continuous everywhere. This makes it differentiable, which is crucial for optimization algorithms like gradient descent. The smoothness of the sigmoid function allows for efficient optimization during training.
+
+**2. Output Range:**
+
+The sigmoid function squashes its input values between 0 and 1. This makes it particularly useful in binary classification problems, where the output needs to represent probabilities or a binary decision.
+
+**3. Probability Interpretation:**
+
+In binary classification, the output of the sigmoid function can be interpreted as the probability that a given input belongs to a particular class. This makes it easy to set a threshold for classification (e.g., if the output is above 0.5, classify as class 1; otherwise, classify as class 0).
+
+**4. Logistic Regression:**
+
+The sigmoid function is a fundamental component of logistic regression, a widely used statistical model for binary classification. In logistic regression, the sigmoid function is used as the activation function.
+
+**5. Gradient Descent Stability:**
+
+The sigmoid function's derivative is relatively simple and can be computed using the function itself. This means that gradients can be efficiently calculated during backpropagation, which is crucial for training neural networks.
+
+**6. Binary Output in Neural Networks:**
+
+In the output layer of a binary classification neural network, a sigmoid activation function is commonly used. It's particularly useful when you want the network to output a probability distribution over the classes.
+
